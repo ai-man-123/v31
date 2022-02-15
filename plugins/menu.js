@@ -26,8 +26,8 @@ const defaultMenu = {
 ┃⬡ Uptime: *%uptime (%muptime)*
 ┃⬡ Database: %rtotalreg dari %totalreg
 ┃⬡ Github:
-┃⬡ https://github.com/AlyaaXd/rfkbot
-┃
+┃⬡ https://github.com/ai-man-123
+┃   https://s.id/yoaiman
 ┗━━━━━━⬣`.trimStart(),
   header: '┏━━〔 %category 〕━⬣',
   body: '┃⬡%cmd %islimit %isPremium',
@@ -240,12 +240,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┃
-┃⬡ Script by Alyaa
-┃⬡ Yt : AlyaaXzy
-┃⬡ Run bot : Heroku
-┃⬡ Tipe SC rfkbot
+┃⬡ Script by Aiman
+┃   ꋬ꒐ꂵꋬꋊ
+┃⬡
+┃⬡ 
 ┗━━━━━━━━⬣`.trim(),
-          "buttonText": "Klik Disini",
+          "buttonText": "ᴋʟɪᴋ ᴅɪꜱɪɴɪ",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
@@ -279,7 +279,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
                 },  {
-                  "title": "[🔞] NSFW",
+                  "title": "[🔞] NSFW(dosa)",
                   "description": "Menu Bokep",
                   "rowId": ".? nsfw"
                 }, {
@@ -455,7 +455,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
-    // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), ' By ꋬ꒐ꂵꋬꋊ', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
   } catch (e) {
